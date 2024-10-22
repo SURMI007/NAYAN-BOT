@@ -164,7 +164,7 @@ module.exports.run = async ({ event, api, args }) => {
     .map(char => fontMap.map[char] || char)
     .join('');
 
-  const gifUrl = ' ';
+  const gifUrl = '';
   const gifData = await axios.get(gifUrl, { responseType: 'stream' });
 
   return api.sendMessage({
