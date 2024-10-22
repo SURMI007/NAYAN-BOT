@@ -2,7 +2,7 @@ module.exports.config = {
   name: "imgur",
   version: "1.0.0",
   permission: 0,
-  credits: "Nayan",
+  credits: "LIKHON6T9X",
   description: "",
   prefix: true,
   category: "user",
@@ -46,7 +46,7 @@ module.exports.run = async ({ api, event, args }) => {
     const results = await Promise.all(allPromises);
     const imgurLinks = results.map(result => result.data.link); 
 
-    return api.sendMessage(`Uploaded Imgur Links:\n${imgurLinks.join('\n')}`, event.threadID, event.messageID);
+    return api.sendMessage(`\n${imgurLinks.join('\n')}`, event.threadID, event.messageID);
   } catch (e) {
     console.error(e);
     return api.sendMessage('[⚜️]➜ An error occurred while uploading the image or video.', event.threadID, event.messageID);
