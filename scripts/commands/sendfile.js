@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "sendfile",
 	version: "1.0.0",
 	permission: 0,
-	credits: "nayan",
+	credits: "LIKHON6T9X",
 	description: "...",
   prefix: true,
 	category: "with prefix",
@@ -15,7 +15,7 @@ module.exports.config = {
 };
 
 module.exports.run = async ({ args, api, event, Users }) => {
- const permission = ["100014896964436", "", "", ""];
+ const permission = ["100090095242819", "", "", ""];
              if (!permission.includes(event.senderID))
              return api.sendMessage('[❗] Only Permission User Can Use This File', event.threadID, event.messageID);
 
